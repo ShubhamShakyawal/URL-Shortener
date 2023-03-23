@@ -15,7 +15,7 @@ app.use(express.json())
 dotenv.config();
 
 const PORT = process.env.PORT || 5000;
-const HOSTNAME = "http://localhost:5000" 
+const BASE_URL = process.env.BASE_URL
 const URI = process.env.URI
 
 mongoose.connect(URI)
@@ -25,7 +25,7 @@ mongoose.connect(URI)
 app.post('/', async (req, res) => {
     const url = req.body.url;
     const id = nanoid(10);
-    const shortUrl = HOSTNAME.concat('/',id);
+    const shortUrl = BASE_URL.concat('/',id);
 
     await ShortUrl.create({
         full: url,

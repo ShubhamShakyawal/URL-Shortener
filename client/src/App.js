@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import axios from 'axios';
 import { saveAs } from 'file-saver';
+import BASE_URL from './helper'
 
 function App() {
   const [ inputUrl, setInputUrl ] = useState("");
@@ -8,7 +9,7 @@ function App() {
   const [ qrCode, setQrCode ] = useState("");
 
   const shortenUrl = async () => {
-    const url = "http://localhost:5000/"
+    const url = BASE_URL
     const response = await axios.post(url, {
       url: inputUrl
     })
