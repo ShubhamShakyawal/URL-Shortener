@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* .triangle {
+  width: 0; 
+  height: 0; 
+  border-top: 0.75rem solid transparent;
+  border-bottom: 0.75rem solid transparent; 
+  
+  border-right: 12px solid white; 
+}
+
+.prompt {
+  position: absolute;
+  left: 58%;
+}
+.prompt::before {
+  content: "";
+  width: 0; 
+  height: 0; 
+  border-top: 0.75rem solid transparent;
+  border-bottom: 0.75rem solid transparent; 
+  
+  border-right: 12px solid white; 
+  position: absolute;
+    left: -0.93rem;
+    top: 20%;
+
+  content: '';
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-right: 15px solid white;
+    position: absolute;
+    left: -0.93rem;
+    top: 10%;
+} */
